@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="11.0.000">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="11.0.000" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File" width="90" x="112" y="85">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_01.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV" width="90" x="313" y="85">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (2)" width="90" x="112" y="187">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_02.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (2)" width="90" x="313" y="187">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (3)" width="90" x="112" y="289">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_03.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (3)" width="90" x="313" y="289">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (4)" width="90" x="112" y="391">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_04.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (4)" width="90" x="313" y="391">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (5)" width="90" x="112" y="493">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_05.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (5)" width="90" x="313" y="493">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (6)" width="90" x="112" y="595">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_06.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (6)" width="90" x="313" y="595">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (7)" width="90" x="112" y="697">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_07.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (7)" width="90" x="313" y="697">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (8)" width="90" x="112" y="799">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_08.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (8)" width="90" x="313" y="799">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (9)" width="90" x="112" y="901">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_09.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (9)" width="90" x="313" y="901">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (10)" width="90" x="112" y="1003">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_10.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (10)" width="90" x="313" y="1003">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (11)" width="90" x="112" y="1105">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_11.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (11)" width="90" x="313" y="1105">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (12)" width="90" x="112" y="1207">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_12.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (12)" width="90" x="313" y="1207">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (13)" width="90" x="112" y="1309">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_13.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (13)" width="90" x="313" y="1309">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (14)" width="90" x="112" y="1411">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_14.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (14)" width="90" x="313" y="1411">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (15)" width="90" x="112" y="1513">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_15.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (15)" width="90" x="313" y="1513">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (16)" width="90" x="112" y="1615">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_16.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (16)" width="90" x="313" y="1615">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (17)" width="90" x="112" y="1717">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_17.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (17)" width="90" x="313" y="1717">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="open_file" compatibility="11.0.000" expanded="true" height="68" name="Open File (18)" width="90" x="112" y="1819">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//Local Repository/data/Datafolder/experiment_18.csv"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="11.0.000" expanded="true" height="68" name="Read CSV (18)" width="90" x="313" y="1819">
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="America/New_York"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+      </operator>
+      <operator activated="true" class="append" compatibility="11.0.000" expanded="true" height="439" name="Append" width="90" x="581" y="187">
+        <parameter key="data_management" value="auto"/>
+        <parameter key="merge_type" value="all"/>
+      </operator>
+      <operator activated="true" class="model_simulator:data_statistics" compatibility="10.5.000" expanded="true" height="82" name="Statistics" width="90" x="782" y="187"/>
+      <connect from_op="Open File" from_port="file" to_op="Read CSV" to_port="file"/>
+      <connect from_op="Read CSV" from_port="output" to_op="Append" to_port="example set 4"/>
+      <connect from_op="Open File (2)" from_port="file" to_op="Read CSV (2)" to_port="file"/>
+      <connect from_op="Read CSV (2)" from_port="output" to_op="Append" to_port="example set 1"/>
+      <connect from_op="Open File (3)" from_port="file" to_op="Read CSV (3)" to_port="file"/>
+      <connect from_op="Read CSV (3)" from_port="output" to_op="Append" to_port="example set 2"/>
+      <connect from_op="Open File (4)" from_port="file" to_op="Read CSV (4)" to_port="file"/>
+      <connect from_op="Read CSV (4)" from_port="output" to_op="Append" to_port="example set 3"/>
+      <connect from_op="Open File (5)" from_port="file" to_op="Read CSV (5)" to_port="file"/>
+      <connect from_op="Read CSV (5)" from_port="output" to_op="Append" to_port="example set 5"/>
+      <connect from_op="Open File (6)" from_port="file" to_op="Read CSV (6)" to_port="file"/>
+      <connect from_op="Read CSV (6)" from_port="output" to_op="Append" to_port="example set 6"/>
+      <connect from_op="Open File (7)" from_port="file" to_op="Read CSV (7)" to_port="file"/>
+      <connect from_op="Read CSV (7)" from_port="output" to_op="Append" to_port="example set 7"/>
+      <connect from_op="Open File (8)" from_port="file" to_op="Read CSV (8)" to_port="file"/>
+      <connect from_op="Read CSV (8)" from_port="output" to_op="Append" to_port="example set 8"/>
+      <connect from_op="Open File (9)" from_port="file" to_op="Read CSV (9)" to_port="file"/>
+      <connect from_op="Read CSV (9)" from_port="output" to_op="Append" to_port="example set 9"/>
+      <connect from_op="Open File (10)" from_port="file" to_op="Read CSV (10)" to_port="file"/>
+      <connect from_op="Read CSV (10)" from_port="output" to_op="Append" to_port="example set 10"/>
+      <connect from_op="Open File (11)" from_port="file" to_op="Read CSV (11)" to_port="file"/>
+      <connect from_op="Read CSV (11)" from_port="output" to_op="Append" to_port="example set 11"/>
+      <connect from_op="Open File (12)" from_port="file" to_op="Read CSV (12)" to_port="file"/>
+      <connect from_op="Read CSV (12)" from_port="output" to_op="Append" to_port="example set 12"/>
+      <connect from_op="Open File (13)" from_port="file" to_op="Read CSV (13)" to_port="file"/>
+      <connect from_op="Read CSV (13)" from_port="output" to_op="Append" to_port="example set 13"/>
+      <connect from_op="Open File (14)" from_port="file" to_op="Read CSV (14)" to_port="file"/>
+      <connect from_op="Read CSV (14)" from_port="output" to_op="Append" to_port="example set 14"/>
+      <connect from_op="Open File (15)" from_port="file" to_op="Read CSV (15)" to_port="file"/>
+      <connect from_op="Read CSV (15)" from_port="output" to_op="Append" to_port="example set 15"/>
+      <connect from_op="Open File (16)" from_port="file" to_op="Read CSV (16)" to_port="file"/>
+      <connect from_op="Read CSV (16)" from_port="output" to_op="Append" to_port="example set 16"/>
+      <connect from_op="Open File (17)" from_port="file" to_op="Read CSV (17)" to_port="file"/>
+      <connect from_op="Read CSV (17)" from_port="output" to_op="Append" to_port="example set 17"/>
+      <connect from_op="Open File (18)" from_port="file" to_op="Read CSV (18)" to_port="file"/>
+      <connect from_op="Read CSV (18)" from_port="output" to_op="Append" to_port="example set 18"/>
+      <connect from_op="Append" from_port="merged set" to_op="Statistics" to_port="example set"/>
+      <connect from_op="Statistics" from_port="statistics" to_port="result 1"/>
+      <connect from_op="Statistics" from_port="example set" to_port="result 2"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+      <portSpacing port="sink_result 3" spacing="0"/>
+    </process>
+  </operator>
+</process>
