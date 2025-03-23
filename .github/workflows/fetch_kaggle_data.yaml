@@ -1,7 +1,7 @@
 name: Fetch Kaggle Datasets and Push to GitHub
 
 on:
-  workflow_dispatch:  # Allows manual triggering
+  workflow_dispatch:
 
 jobs:
   fetch-and-push:
@@ -19,19 +19,19 @@ jobs:
         run: |
           pip install kaggle
           mkdir -p ~/.kaggle
-          echo "${{ secrets.KAGGLE_API_KEY }}" > ~/.kaggle/kaggle.json
+          echo "{\"username\": \"${{ secrets.KAGGLE_USERNAME }}\", \"key\": \"${{ secrets.KAGGLE_API_KEY }}\"}" > ~/.kaggle/kaggle.json
           chmod 600 ~/.kaggle/kaggle.json
+
+      - name: Verify Kaggle Authentication
+        run: |
+          kaggle datasets list  # This should return dataset lists if authentication is successful
 
       - name: Fetch Kaggle Datasets
         run: |
           mkdir -p datasets
-          cd datasets
-          
-          kaggle datasets download -d adorigueto/cnc-turning-roughness-forces-and-tool-wear --unzip -p cnc-turning-roughness-forces-and-tool-wear
-          kaggle datasets download -d maximilianfellhuber/cnc-machining-data --unzip -p cnc-machining-data
-          kaggle datasets download -d shasun/tool-wear-detection-in-cnc-mill --unzip -p tool-wear-detection-in-cnc-mill
-          
-          cd ..
+          kaggle datasets download -d adorigueto/cnc-turning-roughness-forces-and-tool-wear --unzip -p datasets/cnc-turning-roughness-forces-and-tool-wear
+          kaggle datasets download -d maximilianfellhuber/cnc-machining-data --unzip -p datasets/cnc-machining-data
+          kaggle datasets download -d shasun/tool-wear-detection-in-cnc-mill --unzip -p datasets/tool-wear-detection-in-cnc-mill
 
       - name: Push to GitHub
         run: |
