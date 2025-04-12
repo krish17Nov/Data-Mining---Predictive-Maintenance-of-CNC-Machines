@@ -1,6 +1,0 @@
-Accuracy Score = 97.9
-
-Confusion Matrix:=
-
-([[  5,   7],
-  [  0, 329]])
