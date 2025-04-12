@@ -1,0 +1,10 @@
+step - loss: 1.6063 - 
+
+machining_finalized_accuracy: 1.0000 - 
+machining_finalized_loss: 0.4686 - 
+
+passed_visual_inspection_accuracy: 0.8571 - 
+passed_visual_inspection_loss: 0.4351 - 
+
+tool_condition_accuracy: 0.6429 - 
+tool_condition_loss: 0.7026
